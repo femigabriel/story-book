@@ -1,4 +1,5 @@
 import React from "react";
+import { ReadBookHeader } from "./ReadBookHeader";
 
 interface Props {
   onNextClick: () => any;
@@ -6,28 +7,29 @@ interface Props {
 }
 export const BookPageCover = ({ onNextClick, onBackClick }: Props) => {
   return (
-      <div className="flex justify-between items-center coverBook w-full h-screen px-5">
+    <div className="coverBook">
+      <ReadBookHeader />
+      <div className="flex justify-between items-center  w-full h-screen px-5">
         <img
-          src="../src/assets/icons/forwardIcon.svg"
+          src="./assets/icons/forwardIcon.svg"
           className="w-[17px] h-[19px] cursor-pointer cover"
           alt="forward-icon"
           onClick={onBackClick}
-
         />
         <div>
           <img
-            src="../src/assets/images/book1.svg"
+            src="./assets/images/book1.svg"
             className="w-[680px] h-[539px] cursor-pointer "
             alt="cover"
           />
         </div>
         <img
-          src="../src/assets/icons/backIcon.svg"
+          src="./assets/icons/backIcon.svg"
           className="w-[17px] h-[19px] cursor-pointer cover"
           alt="forward-icon"
           onClick={onNextClick}
-
         />
       </div>
+    </div>
   );
 };

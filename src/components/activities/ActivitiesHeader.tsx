@@ -10,9 +10,9 @@ const items: MenuProps["items"] = [
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.antgroup.com"
+        href="/score"
       >
-        1st menu item
+     Scores
       </a>
     ),
   },
@@ -22,24 +22,24 @@ const items: MenuProps["items"] = [
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.aliyun.com"
+        href="/leaderboard"
       >
-        2nd menu item
+      Leaderboard
       </a>
     ),
   },
-  {
-    key: "3",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        3rd menu item
-      </a>
-    ),
-  },
+  // {
+  //   key: "3",
+  //   label: (
+  //     <a
+  //       target="_blank"
+  //       rel="noopener noreferrer"
+  //       href="https://www.luohanacademy.com"
+  //     >
+  //       3rd menu item
+  //     </a>
+  //   ),
+  // },
 ];
 
 export const ActivitiesHeader = () => {
@@ -48,7 +48,7 @@ export const ActivitiesHeader = () => {
       <header className="px-10 py-7 flex justify-between  w-full">
         <div className="flex cursor-pointer w-full">
           <img
-            src="../src/assets/icons/back.svg"
+            src="./assets/icons/back.svg"
             className="w-[24px] h-[24px] mr-3"
             alt="back-icon"
           />
@@ -58,7 +58,7 @@ export const ActivitiesHeader = () => {
         <div className="flex">
           <div className="flex cursor-pointer h-[] w-[198px]">
             <img
-              src="../src/assets/icons/avatarIcon.svg"
+              src="./assets/icons/avatarIcon.svg"
               className="w-[58px] h-[58px] cursor-pointer"
               alt="avatar"
             />
@@ -73,8 +73,8 @@ export const ActivitiesHeader = () => {
           /> */}
           <Dropdown menu={{ items }} placement="bottomRight" arrow>
             <img
-              src="../src/assets/icons/downIcon.svg"
-              className="w-[40px] h-[40px] mt-3"
+              src="./assets/icons/downIcon.svg"
+              className="w-[40px] h-[40px] mt-3 cursor-pointer"
               alt="down-icon"
             />
           </Dropdown>

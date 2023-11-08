@@ -15,7 +15,7 @@ export const ReadBookPages = ({onNextClick}:Props) => {
         <div className="grid grid-cols-3 gap-5">
           <div className="flex flex-col">
             <img
-              src="../src/assets/images/book1.svg"
+              src="./assets/images/book1.svg"
               className="w-[323px] h-[485px] cursor-pointer"
               alt="book"
             />
@@ -28,7 +28,7 @@ export const ReadBookPages = ({onNextClick}:Props) => {
 
           <div className="flex flex-col">
             <img
-              src="../src/assets/images/book2.svg"
+              src="./assets/images/book2.svg"
               className="w-[323px] h-[485px] cursor-pointer"
               alt="menu"
             />
@@ -41,7 +41,7 @@ export const ReadBookPages = ({onNextClick}:Props) => {
 
           <div className="flex flex-col">
             <img
-              src="../src/assets/images/book2.svg"
+              src="../assets/images/book2.svg"
               className="w-[323px] h-[485px] cursor-pointer"
               alt="menu"
             />

@@ -29,6 +29,10 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #303030;
 }
+li {
+  list-style: none;
+  cursor: pointer;
+}
 .home {
   width: 100%;
 }
@@ -47,10 +51,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .readBook {
-  /* background: var(
-    --MIXED,
-    conic-gradient(from 251deg at 75.01% 56.74%, #f8f8f8 0deg, #e1d1f6 360deg)
-  ); */
   background: var(
     --MIXED,
     conic-gradient(from 251deg at 121.01% 56.74%, #f8f8f8 0deg, #e1d1f6 360deg)
@@ -93,4 +93,9 @@ body::-webkit-scrollbar-thumb {
   .footer p {
     font-size: 10px;
   }
+  .activity-card {
+    display: flex;
+    flex-direction: column;
+  }
 }
+/* Activities Card */

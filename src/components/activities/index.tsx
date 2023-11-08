@@ -1,10 +1,10 @@
 import React from "react";
-import { ActivitiesHeader } from "./ActivitiesHeader";
+import { ActivitiesCard } from "./ActivitiesCards";
 
 export const ActivitiesPage = () => {
   return (
     <div>
-      <ActivitiesHeader />
+      <ActivitiesCard />
     </div>
   );
 };
