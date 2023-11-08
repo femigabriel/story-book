@@ -2,29 +2,22 @@ import React from "react";
 import { DownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Button, Dropdown } from "antd";
+import Link from "next/link";
 
 const items: MenuProps["items"] = [
   {
     key: "1",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="/score"
-      >
-     Scores
+      <a target="_blank" rel="noopener noreferrer" href="/score">
+        Scores
       </a>
     ),
   },
   {
     key: "2",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="/leaderboard"
-      >
-      Leaderboard
+      <a target="_blank" rel="noopener noreferrer" href="/leaderboard">
+        Leaderboard
       </a>
     ),
   },
@@ -46,14 +39,16 @@ export const ActivitiesHeader = () => {
   return (
     <div className="w-full h-[96px]">
       <header className="px-10 py-7 flex justify-between  w-full">
-        <div className="flex cursor-pointer w-full">
-          <img
-            src="./assets/icons/back.svg"
-            className="w-[24px] h-[24px] mr-3"
-            alt="back-icon"
-          />
-          <span>Back</span>
-        </div>
+        <Link href="/" className="flex cursor-pointer w-full">
+          
+            <img
+              src="./assets/icons/back.svg"
+              className="w-[24px] h-[24px] mr-3"
+              alt="back-icon"
+            />
+            <span>Back</span>
+         
+            </Link>
 
         <div className="flex">
           <div className="flex cursor-pointer h-[] w-[198px]">

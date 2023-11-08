@@ -3,7 +3,7 @@ import { ActivitiesCard } from "./ActivitiesCards";
 
 export const ActivitiesPage = () => {
   return (
-    <div>
+    <div className="">
       <ActivitiesCard />
     </div>
   );
